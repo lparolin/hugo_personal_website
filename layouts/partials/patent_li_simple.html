@@ -1,0 +1,19 @@
+<div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text pub-icon" aria-hidden="true"></i>
+  <a href="{{ .Permalink }}" itemprop="name">{{ .Title }}</a>
+  <div itemprop="author">
+    {{ with .Params.inventors }}
+      {{- delimit . ", " | markdownify -}}
+    {{- end -}}
+  </div>
+  {{ if .Params.publication_number }}
+  <div itemprop="publication_number">
+    {{ .Params.publication_number }}
+  </div>
+  {{ else if .Params.application_number}}
+  <div itemprop="publication_number">
+    {{ .Params.application_number }}
+  </div>
+  {{ end }}
+  <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}</p>
+</div>

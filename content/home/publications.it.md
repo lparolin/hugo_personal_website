@@ -1,14 +1,15 @@
 +++
-# Patent widget.
-widget = "patents"
+# Recent Publications widget.
+# This widget displays recent publications from `content/publication/`.
+widget = "publications"
 active = true
 date = 2016-04-20T00:00:00
 
-title = "Patents"
+title = "Pubblicazioni"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 30
+weight = 20
 
 # Number of publications to list.
 count = 10
@@ -18,7 +19,7 @@ count = 10
 #   1 = Detailed
 #   2 = APA
 #   3 = MLA
-list_format = 0
+list_format = 3
 
 # Filter by publication type.
 # -1: Any
@@ -29,7 +30,6 @@ list_format = 0
 #  4: Technical report
 #  5: Book
 #  6: Book chapter
-#  7: Patent
 publication_type = "-1"
 
 # Exclude publications that are shown in the Selected Publications widget?
