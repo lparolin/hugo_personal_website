@@ -1,16 +1,9 @@
-# Configuration of Academic
-# Documentation: https://sourcethemes.com/academic/
-
-# The URL of your website.
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = "https://lucaparolini.com/"
-
-# Title of your site
 title = "Luca Parolini"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+# copyright = "&copy; 2018"
 
 theme = "academic"
 enableEmoji = true
@@ -19,10 +12,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
 
-# Enable comments by entering your Disqus shortname
 disqusShortname = ""
-
-# Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = "UA-117427808-1"
 
 # Default language to use (if you setup multilingual support)
@@ -104,7 +94,7 @@ defaultContentLanguageInSubdir = false
   time_format = "3:04 PM"
 
   # Show estimated reading time for posts?
-  reading_time = true
+  reading_time = false
 
   # Display comment count? Requires commenting to be enabled.
   comment_count = true
@@ -230,60 +220,17 @@ defaultContentLanguageInSubdir = false
     link = "https://www.linkedin.com/in/lucaparolini/"
 
 
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
+#https://gohugo.io/getting-started/configuration/#configure-blackfriday
+[frontmatter]
+    date = ["date","publishDate", "lastmod"]
+    lastmod = [":git", "lastmod", "date","publishDate"]
+    publishDate = ["publishDate", "date"]
+    expiryDate = ["expiryDate"]
+
+
 [params.menus]
   # Align the main menu to the right of the page? (true/false)
   align_right = true
-
-# [[menu.main]]
-#   name = "Home"
-#   url = "#about"
-#   weight = 1
-#
-# [[menu.main]]
-#   name = "Publications"
-#   url = "#publications"
-#   weight = 2
-#
-# [[menu.main]]
-#   name = "Patents"
-#   url = "#patents"
-#   weight = 3
-# #
-# [[menu.main]]
-#   name = "Contact"
-#   url = "#contact"
-#   weight = 6
-# [[menu.main]]
-#   name = "Posts"
-#   url = "#posts"
-#   weight = 3
-#
-# [[menu.main]]
-#   name = "Projects"
-#   url = "#projects"
-#   weight = 4
-#
-# [[menu.main]]
-#   name = "Teaching"
-#   url = "#teaching"
-#   weight = 5
-
-
-
-# Taxonomies.
-# [taxonomies]
-#   tag = "tags"
-#   category = "categories"
-#   publication_type = "publication_types"
-
-# Languages
-#   Create a [languages.X] block for each language you want, where X is the language ID.
-
-# Configure the English version of the website.
 
 enableMissingTranslationPlaceholders = true
 
@@ -359,4 +306,3 @@ enableMissingTranslationPlaceholders = true
       name = "Kontakte"
       url = "#contact"
       weight = 4
- #extensions = ["hardLineBreak"]
