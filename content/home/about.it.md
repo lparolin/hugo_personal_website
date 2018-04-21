@@ -40,6 +40,6 @@ weight = 5
 
 # Biografia
 
-Luca Parolini è un ingegnere ricercatore attualmente occupato presso [BMW A.G.](https://www.bmwgroup.com/en/innovation/technologies-and-mobility/autonomes-fahren/campus.html) a Monaco di Baviera, Germania. All'interno del gruppo BMW, i suoi compiti includono ideazione, sviluppo e test di nuovi algoritmi per applicazioni di guida autonoma con speciale interesse a temi di sicurezza. Prima di lavorare per BMW, Luca Parolini ha lavorato come Lead Research Engineer nel gruppo di Controls and Embedded Systems presso [GE Global Research](https://www.geglobalresearch.com/) a Monaco di Baviera, Germania.
+Luca Parolini è un ingegnere ricercatore attualmente occupato presso [BMW A.G.](https://www.bmwgroup.com/en/innovation/technologies-and-mobility/autonomes-fahren/campus.html) a Monaco di Baviera, Germania. All'interno del gruppo BMW, i suoi compiti includono ideazione, sviluppo e test di nuovi algoritmi per applicazioni di guida autonoma con particolare attenzione ai temi relativi alla sicurezza. Prima di lavorare per BMW, Luca Parolini ha lavorato come Lead Research Engineer nel gruppo di Controls and Embedded Systems presso [GE Global Research](https://www.geglobalresearch.com/) a Monaco di Baviera, Germania.
 
-Luca Parolini ha conseguito il suo dottorato di ricerca presso [Carnegie Mellon University](https://www.ece.cmu.edu/) in Pittsburgh (PA), USA. La sua tesi di dottorato si è focalizzata su problemi di controllo per data centers.
+Luca Parolini ha conseguito il dottorato di ricerca presso [Carnegie Mellon University](https://www.ece.cmu.edu/) a Pittsburgh (PA), USA. La sua tesi di dottorato si è focalizzata su problemi di controllo per data centers.
