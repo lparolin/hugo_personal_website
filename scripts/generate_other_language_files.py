@@ -4,6 +4,7 @@ import os
 import sys
 import logging
 import shutil
+from subprocess import call
 
 FILES_TO_SKIP = ("_index.md",)
 
@@ -33,7 +34,7 @@ def get_file_list_in_folder(folder_path):
     if not file_list:
         logger.warning("No files found.")
     else:
-        logger.info("File found: %s", ",".join(file_list))
+        logger.debug("File found: %s", ",".join(file_list))
     return file_list
 
 
