@@ -95,16 +95,6 @@ class TestFileDuplication(TestCase):
         for i_file in replicated_file:
             assert(i_file in all_files_in_dir), "{} was not created".format(i_file)
 
+
 if __name__ == '__main__':
     unittest.main()
-
-
-#
-# class FakeFyleSystem(object):
-#    @classmethod
-#    def setUp(cls):
-#
-#
-# def test_get_file_list_in_folder():
-#     """Return a list of files contained in a given folder."""
-#     assert (True)
