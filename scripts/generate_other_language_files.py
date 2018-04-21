@@ -44,7 +44,8 @@ def is_to_be_added(file_to_be_checked):
     base_name, extension = os.path.splitext(file_name)
     is_file_to_be_added = file_name not in FILES_TO_SKIP and \
         os.path.isfile(file_to_be_checked) and \
-        extension == ".md"
+        extension == ".md" and \
+        "." not in base_name
 
     if not is_file_to_be_added:
         logger.debug("File %s not added", file_to_be_checked)
@@ -71,18 +72,9 @@ def replicate_file(file_src, token_list):
 
 
 if __name__ == '__main__':
-    # parameters = sys.argv
-    # if len(parameters) is not 3:
-    #     log.error("Wrong number of input paramters. Expected 3 got %d",
-    #               len(parameters))
-    #     sys.exit("""Wrong number of input paramters. Use the following syntax to execute the script:")
-    #         python generate_other_language_files.py <path_fo_src_files> <language_token>
-    #     """)
-
-    # folder = parameters[1]
-    # extension = parameters[2]
-    folder = "../content/publication"
+    folders = ("../content/publication", "../content/patent")
     language_token = (".it", ".de")
-    file_src = get_file_list_in_folder(folder)
-    for i_file in file_src:
-        replicate_file(os.path.join(folder, i_file), language_token)
+    for i_folder in folders:
+        file_src = get_file_list_in_folder(i_folder)
+        for i_file in file_src:
+            replicate_file(os.path.join(i_folder, i_file), language_token)
