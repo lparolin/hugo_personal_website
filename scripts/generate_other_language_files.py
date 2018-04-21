@@ -82,7 +82,7 @@ if __name__ == '__main__':
     # folder = parameters[1]
     # extension = parameters[2]
     folder = "../content/publication"
-    language_token = ("_it", "_de")
+    language_token = (".it", ".de")
     file_src = get_file_list_in_folder(folder)
     for i_file in file_src:
-        replicate_file(i_file, language_token)
+        replicate_file(os.path.join(folder, i_file), language_token)
