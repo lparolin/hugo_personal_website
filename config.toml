@@ -238,21 +238,25 @@ defaultContentLanguageInSubdir = false
   # Align the main menu to the right of the page? (true/false)
   align_right = true
 
-[[menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
-
-[[menu.main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 2
-
-  [[menu.main]]
-    name = "Patents"
-    url = "#patents"
-    weight = 3
-
+# [[menu.main]]
+#   name = "Home"
+#   url = "#about"
+#   weight = 1
+#
+# [[menu.main]]
+#   name = "Publications"
+#   url = "#publications"
+#   weight = 2
+#
+# [[menu.main]]
+#   name = "Patents"
+#   url = "#patents"
+#   weight = 3
+# #
+# [[menu.main]]
+#   name = "Contact"
+#   url = "#contact"
+#   weight = 6
 # [[menu.main]]
 #   name = "Posts"
 #   url = "#posts"
@@ -268,10 +272,7 @@ defaultContentLanguageInSubdir = false
 #   url = "#teaching"
 #   weight = 5
 
-[[menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 6
+
 
 # Taxonomies.
 # [taxonomies]
@@ -288,11 +289,74 @@ enableMissingTranslationPlaceholders = true
 
 [Languages.en]
   languageCode = "en-us"
-  role = "Software developer"
+  role = "Specialist developer"
+
+[[Languages.en.menu.main]]
+    name = "Home"
+    url = "#about"
+    weight = 1
+
+[[Languages.en.menu.main]]
+    name = "Pubblications"
+    url = "#publications"
+    weight = 2
+
+[[Languages.en.menu.main]]
+    name = "Patents"
+    url = "#patents"
+    weight = 3
+
+[[Languages.en.menu.main]]
+   name = "Contact"
+   url = "#contact"
+   weight = 4
+
 
 [Languages.it]
   languageCode = "it"
-  role = "Sviluppatore software"
+  role = "Sviluppatore specialista"
 
+[[Languages.it.menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
 
+[[Languages.it.menu.main]]
+  name = "Pubblicazioni"
+  url = "#publications"
+  weight = 2
+
+[[Languages.it.menu.main]]
+  name = "Brevetti"
+  url = "#patents"
+  weight = 3
+
+[[Languages.it.menu.main]]
+    name = "Contatti"
+    url = "#contact"
+    weight = 4
+
+[Languages.de]
+    languageCode = "de"
+    role = "Spezialist Entwicklung"
+
+[[Languages.de.menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[Languages.de.menu.main]]
+  name = "Publikationen"
+  url = "#publications"
+  weight = 2
+
+[[Languages.de.menu.main]]
+  name = "Patente"
+  url = "#patents"
+  weight = 3
+
+[[Languages.de.menu.main]]
+      name = "Kontakte"
+      url = "#contact"
+      weight = 4
  #extensions = ["hardLineBreak"]
