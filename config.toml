@@ -10,7 +10,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
-paginate = 10
+paginate = 5
 
 disqusShortname = ""
 googleAnalytics = "UA-117427808-1"
@@ -160,7 +160,8 @@ defaultContentLanguageInSubdir = false
     'Report',  # 4
     'Book',  # 5
     'Book section',  # 6
-    'Patent' # 7
+    'Patent', # 7
+    'Dissertation'  #8
   ]
 
   # Configuration of talk pages.
@@ -234,75 +235,79 @@ defaultContentLanguageInSubdir = false
 
 enableMissingTranslationPlaceholders = true
 
-[Languages.en]
-  languageCode = "en-us"
-  role = "Specialist developer"
 
-[[Languages.en.menu.main]]
-    name = "Home"
-    url = "#about"
-    weight = 1
+[Languages]
+    [Languages.en]
+      languageCode = "en-us"
+      role = "Specialist developer"
 
-[[Languages.en.menu.main]]
-    name = "Pubblications"
-    url = "#publications"
-    weight = 2
+    [[Languages.en.menu.main]]
+        name = "Home"
+        url = "#about"
+        weight = 1
 
-[[Languages.en.menu.main]]
-    name = "Patents"
-    url = "#patents"
-    weight = 3
+    [[Languages.en.menu.main]]
+        name = "Pubblications"
+        url = "#publications"
+        weight = 2
 
-[[Languages.en.menu.main]]
-   name = "Contact"
-   url = "#contact"
-   weight = 4
+    [[Languages.en.menu.main]]
+        name = "Patents"
+        url = "#patents"
+        weight = 3
+
+    [[Languages.en.menu.main]]
+       name = "Contact"
+       url = "#contact"
+       weight = 4
 
 
-[Languages.it]
-  languageCode = "it"
-  role = "Sviluppatore specialista"
+    [Languages.it]
+      languageCode = "it"
+      role = "Sviluppatore specialista"
 
-[[Languages.it.menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
+    [[Languages.it.menu.main]]
+      name = "Home"
+      url = "#about"
+      weight = 1
 
-[[Languages.it.menu.main]]
-  name = "Pubblicazioni"
-  url = "#publications"
-  weight = 2
+    [[Languages.it.menu.main]]
+      name = "Pubblicazioni"
+      url = "#publications"
+      weight = 2
 
-[[Languages.it.menu.main]]
-  name = "Brevetti"
-  url = "#patents"
-  weight = 3
+    [[Languages.it.menu.main]]
+      name = "Brevetti"
+      url = "#patents"
+      weight = 3
 
-[[Languages.it.menu.main]]
-    name = "Contatti"
-    url = "#contact"
-    weight = 4
+    [[Languages.it.menu.main]]
+        name = "Contatti"
+        url = "#contact"
+        weight = 4
 
-[Languages.de]
-    languageCode = "de"
-    role = "Spezialist Entwicklung"
+  # [Languages.de]
+ #      languageCode = "de"
+  #    role = "Spezialist Entwicklung"
+  #
+  #   [[Languages.de.menu.main]]
+  #     name = "Home"
+  #     url = "#about"
+  #     weight = 1
+  #
+  #   [[Languages.de.menu.main]]
+  #     name = "Publikationen"
+  #     url = "#publications"
+  #     weight = 2
+  #
+  #   [[Languages.de.menu.main]]
+  #     name = "Patente"
+  #     url = "#patents"
+  #     weight = 3
+  #
+  #   [[Languages.de.menu.main]]
+  #     name = "Kontakte"
+  #     url = "#contact"
+  #     weight = 4
 
-[[Languages.de.menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
-
-[[Languages.de.menu.main]]
-  name = "Publikationen"
-  url = "#publications"
-  weight = 2
-
-[[Languages.de.menu.main]]
-  name = "Patente"
-  url = "#patents"
-  weight = 3
-
-[[Languages.de.menu.main]]
-      name = "Kontakte"
-      url = "#contact"
-      weight = 4
+  disableLanguages = ["de"]

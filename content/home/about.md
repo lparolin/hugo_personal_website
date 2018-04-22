@@ -14,10 +14,10 @@ weight = 5
     "Sensor fusion",
     "Machine learning",
     "Optimization",
-    "Statistics",
     "Artificial Intelligence",
-    "Information Retrieval",
-    "Formal methods"
+    "Formal methods",
+    "Lean product development",
+    "AGILE project management"
   ]
 
 # List your qualifications (such as academic degrees).
