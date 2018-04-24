@@ -286,28 +286,26 @@ enableMissingTranslationPlaceholders = true
         url = "#contact"
         weight = 4
 
-  # [Languages.de]
- #      languageCode = "de"
-  #    role = "Spezialist Entwicklung"
-  #
-  #   [[Languages.de.menu.main]]
-  #     name = "Home"
-  #     url = "#about"
-  #     weight = 1
-  #
-  #   [[Languages.de.menu.main]]
-  #     name = "Publikationen"
-  #     url = "#publications"
-  #     weight = 2
-  #
-  #   [[Languages.de.menu.main]]
-  #     name = "Patente"
-  #     url = "#patents"
-  #     weight = 3
-  #
-  #   [[Languages.de.menu.main]]
-  #     name = "Kontakte"
-  #     url = "#contact"
-  #     weight = 4
+  [Languages.de]
+      languageCode = "de"
+     role = "Spezialist Entwicklung"
 
-  disableLanguages = ["de"]
+    [[Languages.de.menu.main]]
+      name = "Home"
+      url = "#about"
+      weight = 1
+
+    [[Languages.de.menu.main]]
+      name = "Publikationen"
+      url = "#publications"
+      weight = 2
+
+    [[Languages.de.menu.main]]
+      name = "Patente"
+      url = "#patents"
+      weight = 3
+
+    [[Languages.de.menu.main]]
+      name = "Kontakte"
+      url = "#contact"
+      weight = 4

@@ -74,7 +74,7 @@ def replicate_file(file_src, token_list):
 
 if __name__ == '__main__':
     folders = ("../content/publication", "../content/patent")
-    language_token = (".it",) # ".de")
+    language_token = (".it", ".de")
     for i_folder in folders:
         file_src = get_file_list_in_folder(i_folder)
         for i_file in file_src:
