@@ -30,7 +30,7 @@ list_format = 0
 #  5: Book
 #  6: Book chapter
 #  7: Patent
-publication_type = "-1"
+publication_type = "7"
 
 # Exclude publications that are shown in the Selected Publications widget?
 exclude_selected = false
